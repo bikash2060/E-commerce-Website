@@ -1,0 +1,328 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    width: 100%;
+    background: #E5E7EB;
+    position: relative;
+    display: flex;
+}
+
+/* Side Menu Bar */
+#menu {
+    background: #1e1e1e;
+    color: black;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#menu .logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 30px 0 0 30px;
+}
+
+#menu .logo img {
+    width: 40px;
+    margin-right: 15px;
+}
+
+#menu .menu-links {
+    width: 100%;
+    margin-top: 50px;
+}
+
+#menu .menu-links .item {
+    position: relative;
+    cursor: pointer;
+}
+
+#menu .menu-links .item a {
+    color: rgb(134, 141, 151);
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 50px;
+}
+
+#menu .menu-links .item:nth-child(2) {
+    border-left: 4px solid #fff;
+}
+
+#menu .menu-links .item a:hover {
+    color: #F3F4F6;
+    background: #253047;
+    transition: 0.3s ease;
+}
+
+#menu .menu-links .item i {
+    margin-right: 15px;
+}
+
+#menu .menu-links .item i:hover {
+    color: #F3F4F6;
+    background: #253047;
+}
+
+#menu .menu-links .item a .dropdown {
+    position: absolute;
+    right: 0;
+    margin: 15px 20px;
+    transition: 0.3s;
+}
+
+#menu .menu-links .item .sub-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+#menu .menu-links .item .sub-menu a {
+    padding-left: 60px;
+}
+
+.logout form i {
+    margin-right: 15px;
+}
+
+.logout form {
+    color: rgb(134, 141, 151);
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.logout form .logout-btn {
+    color: rgb(134, 141, 151);
+    font-size: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.logout form:hover,
+.logout form .logout-btn:hover {
+    color: #F3F4F6;
+    background: #253047;
+    transition: 0.3s ease;
+}
+hr{
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+}
+
+/* Body Section */
+#body-content{
+    width: calc(100% - 300px);
+    margin-left: 300px;
+    position: relative;
+}
+#body-content .nav-section{
+    width: calc(100% - 300px);
+    background: #fff;
+    padding: 15px 30px;
+    border-bottom: 3px solid #a29ae2;
+    position: fixed;
+}
+.message .message-container {
+	position: relative;
+	left: 40%;
+	display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.message .message-container.error {
+    background-color: #ff6347 ;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
+
+.message .message-container.success {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+}
+
+.message .message-container p {
+    margin-right: 20px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.close-btn:hover {
+    font-size: 20px;
+}
+#body-content .nav-section .profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#body-content .nav-section .profile i{
+    color: rgb(157, 157, 185);
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    transition: 0.3s ease;
+}
+#body-content .nav-section i:hover {
+    color: blue;
+}
+#body-content .nav-section .profile img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.title{
+    color: #444a53;
+    padding: 30px 30px 0 30px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 60px;
+}
+.product-table {
+    margin: 30px 0 0 30px;
+    max-height: 533px;
+    width: 80%; 
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-bottom: 1px solid #ccc; 
+    border-radius: 5px;
+    position: relative;
+}
+
+.product-table .table {
+    margin-top: 0; 
+    width: 100%; 
+    text-align: center;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table thead td {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333;
+    background: #F9FAFB;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    position: sticky; 
+    top: 0; 
+    z-index: 1; 
+}
+
+tbody tr {
+    border-bottom: 1px solid #ccc; 
+}
+
+tbody tr td {
+    padding: 10px; 
+    text-align: left;
+    background: #ffffff;
+}
+
+tbody td:not(.image) {
+    font-family: 'Arial', sans-serif;
+    font-size: 17px;
+    color: #555;
+    line-height: 1.5;
+}
+
+tbody tr td.delete .delete-btn,
+tbody tr td.delete .edit-btn {
+    background-color: #dc3545; 
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: 80px; 
+    margin-top: 10px;
+    display: inline-block; 
+    text-decoration: none; 
+    text-align: center;
+}
+
+tbody tr td.delete .edit-btn {
+    background-color: #007bff; 
+}
+
+tbody tr td.delete .delete-btn:hover,
+tbody tr td.delete .edit-btn:hover {
+    background-color: #000000; 
+}
+
+tbody tr:last-child {
+    border-bottom: none; 
+}
+
+tbody tr .image img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+thead tr, tbody tr .image  {
+    width: 15%; 
+}
+thead tr, tbody tr .name {
+    width: 23%; 
+}
+thead tr, tbody tr .price {
+    width: 18%; 
+}
+thead tr, tbody tr .quantity {
+    width: 18%; 
+}
+thead tr, tbody tr .brand {
+    width: 18%; 
+}
+thead tr, tbody tr .delete {
+    width: 26%; 
+}
+
+.product-table::-webkit-scrollbar {
+    width: 5px;
+}
+
+.product-table::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+.product-table::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 5px; 
+}
+
+.product-table::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}

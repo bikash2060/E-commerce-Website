@@ -1,0 +1,100 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:'Montserrat', sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Footer Section */
+.footer-content{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background-color: #f8f8f8;
+    padding: 20px 0;
+}
+.footer-content .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer-content .contact-info, .links, .accounts, .follow-us{
+    line-height: 40px;
+}
+.footer-content .contact-info .company-name{
+    font-size: 20px;
+    font-weight: bold;
+}
+.footer-content .links .menu{
+    font-weight: bold;
+    font-size: 23px;
+}
+.footer-content .links ul li{
+    list-style: none;
+}
+.footer-content .links ul li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    font-size: 14px;
+}
+.footer-content .links ul li a:hover{
+    color: rgb(63, 38, 14);
+    text-decoration: underline;
+}
+.footer-content .accounts .account{
+    font-weight: bold;
+    font-size: 23px;
+}
+.footer-content .accounts ul li{
+    list-style: none;
+}
+.footer-content .accounts ul li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    font-size: 14px;
+}
+.footer-content .accounts ul li a:hover{
+    color: rgb(63, 38, 14);
+    text-decoration: underline;
+}
+.footer-content .follow-us .get-in{
+    font-weight: bold;
+    font-size: 23px;
+    margin-top: -15px;
+}
+.footer-content .follow-us .sub{
+    line-height: 30px;
+}
+.footer-content .follow-us input[type=email]{
+    height: 30px;
+    outline: none;
+    border: 1px solid black;
+    padding: 5px;
+    margin-top: 10px;
+}
+.footer-content .follow-us input[type=submit]{
+    width: 100px;
+    height: 43px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #f7444e;
+    outline: none;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.footer-content .follow-us input[type=submit]:hover{
+    background-color: rgb(184, 183, 180);
+    color: black;
+}

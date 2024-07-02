@@ -1,0 +1,142 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:'Montserrat', sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Header Section */
+.navbar-section nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+nav .logo-section .logo{
+    width: 50px;
+}
+nav .side-links{
+    display: flex;
+    align-items: center;
+}
+nav .side-links .user-pic{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+nav .nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 30px;
+}
+nav .nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.3s;
+}
+nav .nav-links ul li .current{
+	color: red;
+}
+nav .nav-links ul li a:hover{
+    color: red;
+}
+nav .side-links i{
+	cursor: pointer;
+    color: #525252;
+    border-radius: 50%;
+    padding: 7px;
+    margin-right: 25px;
+    background: #e5e5e5;
+    transition: 0.3s ease;
+}
+nav .side-links i:hover{
+    color: blue;
+}
+.dropdown-menu-links{
+	background: white;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 320px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    opacity: 1;
+}
+.dropdown-menu-links.open-menu{
+	background: white;
+    max-height: 400px;
+}
+.dropdown-menu-links .dropdown-menu{
+    padding: 20px;
+    margin: 10px;
+}
+.dropdown-menu .user-info h3{
+    font-weight: 500;
+}
+.dropdown-menu .user-info{
+    display: flex;
+    align-items: center;
+}
+.dropdown-menu .user-info .user-pic{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.dropdown-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+}
+.dropdown-menu .user-links{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+}
+.dropdown-menu .user-links p{
+    width: 100%;
+}
+.dropdown-menu .user-links i{
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.dropdown-menu .user-links span{
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+.dropdown-menu .user-links:hover span{
+    transform: translateX(5px);
+}
+.dropdown-menu .user-links:hover p{
+    font-weight: 600;
+}
+.dropdown-menu #form input[type=submit]{
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+    text-align: left;
+
+}
+.dropdown-menu #form:hover input[type=submit]{
+    font-weight: 600;
+}

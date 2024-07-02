@@ -1,0 +1,301 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:'Montserrat', sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Body Content  */
+.body-content{
+    background-image: url('../images/background.jpg');
+	background-size: cover;
+    height: 88vh;
+    
+}
+.body-content .container{
+    display: flex;
+    align-items: center;
+}
+.text-content .text .text-1{
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: red;
+    margin-top: 130px;
+    opacity: 0.7;
+}
+.text-content .text .text-2{
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 10px;
+    color: rgb(115, 111, 111);
+}
+.text-content .button a{
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    opacity: 0.6;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.text-content .button a:hover{
+    color: black;
+    background-color: rgb(184, 183, 180);
+    border: 1px solid black;
+}
+.body-content .container .background-image img{
+	rotate: 10deg;
+    height: 320px;
+    filter: drop-shadow(5px 5px 10px rgb(100, 92, 92));
+}
+
+/* Mid-body Section */
+.mid-body-content .text p{
+    font-family:    'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+}
+.mid-body-content .boxes{
+    display: flex;
+    justify-content: space-around;
+}
+.box-1, .box-2, .box-3{
+    background-color: #002c3e;
+    width: 400px;
+    border: 1px solid black;
+    margin: 50px 30px 0 0;
+    border-radius: 5px;
+    padding: 45px 30px;
+    transition: 0.6s;
+}
+.box-1:hover{
+    transform:  translateY(-10px);
+    filter: drop-shadow(10px 5px 10px rgb(100, 92, 92));
+}
+.box-2:hover{
+    transform: translateY(-10px);
+    filter: drop-shadow(10px 5px 10px rgb(100, 92, 92));
+}
+.box-3:hover{
+    transform: translateY(-10px);
+    filter: drop-shadow(10px 5px 10px rgb(100, 92, 92));
+}
+.box-1 .icon{
+    font-size: 40px;
+    text-align: center;
+}
+.box-1 .main-text{
+    color: white;
+    font-size: 25px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+.box-1 .body-text{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 30px;
+}
+.box-2 .icon{
+    font-size: 40px;
+    text-align: center;
+}
+.box-2 .main-text{
+    color: white;
+    font-size: 25px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+.box-2 .body-text{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 30px;
+}
+.box-3 .icon{
+    font-size: 40px;
+    text-align: center;
+}
+.box-3 .main-text{
+    color: white;
+    font-size: 25px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+.box-3 .body-text{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+/* Offer Section */
+.offer-section{
+    background-color: #f8f8f8;
+    margin-top: 30px;
+}
+.offer-section .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.offer-section .text-1{
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+.offer-section .image img{
+    width: 300px;
+    filter: drop-shadow(10px 5px 10px rgb(100, 92, 92));
+    margin-right: 100px;
+    transition: 0.6s;
+}
+.offer-section .image img:hover{
+    transform: translateX(10px) translateY(-10px);
+}
+.offer-section .text{
+    line-height: 30px;
+}
+.offer-section .text .heading-1{
+    color: rgb(226, 39, 5);
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 30px;
+}
+.offer-section .text .description{
+    color: rgb(115, 111, 111);
+    font-size: 20px;
+    text-align: justify;
+    width: 650px;
+}
+.offer-section .text .btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+.offer-section .text .btn:hover{
+    color: black;
+    background-color: antiquewhite;
+    border: 1px solid black;
+}
+
+/* Main-product Section  */
+.product-section{
+    margin: 40px 0;
+}
+.product-section .text{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.product-section .product .row-1 .col-1:hover{
+    transform: translateY(-10px);
+    filter: drop-shadow(2px 2px 10px rgb(100, 92, 92));
+}
+.product-section .button a{
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    margin-left: 500px;
+    transition: 0.3s;
+    opacity: 0.8;
+}
+.product-section .button a:hover{
+    border: 1px solid red;
+    color: red;
+    background-color: #f8f8f8;
+}
+
+/* Brand Secttion  */
+.brand-content{
+    margin-top: 20px;
+    background-color: #f8f8f8;
+}
+.brand-content .title{
+    font-size: 40px; 
+    text-align: center; 
+    text-decoration: underline; 
+    color: red;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.brand-content .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.brands img{
+    height: 100px;
+    max-width: auto;
+    margin-right: 10px;
+}
+
+/* Customer's Testimonial Section */
+.customer-testimonial{
+    margin: 50px 0;
+}
+.customer-testimonial .heading{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.customer-testimonial .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+.customer-testimonial .content .customer-image{
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    background-image: url('../images/customer1.jpg');
+	background-size: cover;
+}
+.customer-testimonial .content .customer-name{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    opacity: 0.9;
+}
+.customer-testimonial .content .feedback{
+    text-align: center;
+    margin-top: 10px;
+    line-height: 20px;
+    font-size: 17px;
+    color: rgb(131, 131, 131);
+}

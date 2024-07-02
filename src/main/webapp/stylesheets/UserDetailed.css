@@ -1,0 +1,238 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    width: 100%;
+    background: #E5E7EB;
+    position: relative;
+    display: flex;
+}
+
+/* Side Menu Bar */
+#menu{
+    background: #1e1e1e ;
+    color: black;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#menu .logo{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 30px 0 0 30px;
+}
+#menu .logo img{
+    width: 40px;
+    margin-right: 15px;
+}
+#menu .menu-links{
+    margin-top: 40px;
+}
+#menu .menu-links ul li{
+    list-style: none;
+    padding: 15px 0;
+    transition: 0.3s ease;
+}
+#menu .menu-links ul li:hover{
+    background: #253047;
+    cursor: pointer;
+}
+#menu .menu-links ul li:nth-child(1){
+    border-left: 4px solid #fff;
+}
+#menu .menu-links ul li i{
+    color: rgb(134, 141, 151);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 10px 0 25px;
+}
+#menu .menu-links ul li:hover i,
+#menu .menu-links ul li:hover a{
+    color: #F3F4F6;
+}
+#menu .menu-links ul li a{
+    text-decoration: none;
+    color: rgb(134, 141, 151);
+    font-weight: 300px;
+    transition: 0.3s ease;
+}
+#menu .menu-links ul .logout{
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+}
+#menu .menu-links ul .underline{
+    position: absolute;
+    bottom: 60px;
+    width: 300px;
+}
+#menu .menu-links ul .logout .user-links .logout-btn{
+    background: none;
+    border: none;
+    outline: none;
+    color: rgb(134, 141, 151);
+    font-weight: 300px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Body Content */
+#body-content{
+    width: calc(100% - 300px);
+    margin-left: 300px;
+    position: relative;
+}
+#body-content .nav-section{
+    width: calc(100% - 300px);
+    background: #fff;
+    padding: 15px 30px;
+    border-bottom: 3px solid #a29ae2;
+    position: fixed;
+    z-index: 1;
+}
+#body-content .nav-section .profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#body-content .nav-section .profile .user-pic{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.form{
+    margin-top: 50px;
+    padding: 50px 0 0 100px;
+}
+.error-message{
+	display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background: red;
+    opacity: 0.8;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.error-message .close-button{
+	float: right;
+    cursor: pointer;
+}
+.error-message .close-button:hover{
+	color: #000; 
+}
+.success-message{
+	display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background: #4CAF50; /* Green background color */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.success-message .close-button {
+	float: right;
+    cursor: pointer;
+}
+.success-message .close-button:hover {
+    color: #000; 
+}
+.form .row{
+    display: flex;
+    align-items: center;
+}
+.form textarea{
+	resize: none;
+}
+#user .user-pic{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#user #image{
+    display: none;
+}
+#user #upload-btn i{
+    position: absolute;
+    text-align: center;
+    padding: 6px 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 100px;
+    transform: translateX(-90%);
+    background: rgb(173, 172, 172, 0.801);
+    box-shadow: 2px 4px 4px rgb(0,0,0,0.644);
+}
+.row #username h2{
+    font-size: 25px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    color: rgb(58, 55, 55);
+}
+.row .col{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.row .col #username{
+	background: #f4f4f4;
+}
+.col label{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.col input, select{
+    height: 40px;
+    width: 300px;
+    margin-right: 60px;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s ease;
+}
+.col select{
+    margin-top: -18px;
+}
+.form input[type=submit]{
+    font-size: 17px;
+    background: #0866ff;
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    padding: 12px 9px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    transition: 0.3 ease;
+}
+.form input[type=submit]:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 2px 2px 2px rgb(119, 113, 113);
+}
+
