@@ -1,7 +1,7 @@
 Online Electronics Store
 This project is an online electronics store that allows users to browse, add to cart, remove items, checkout, and manage their profiles and order history. The application is built using JSP, CSS, JavaScript, Servlets, and MySQL to provide a seamless and interactive shopping experience.
 
-Features
+Features<br>
 Add to Cart: Users can add products to their shopping cart for purchase.
 Remove from Cart: Users can remove products from their shopping cart.
 Checkout: Users can complete their purchase and process payment.
